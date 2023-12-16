@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-
+import requests
 def Download_data(URL, headers):
   page = requests.get(URL, headers=headers)
   soup1 = BeautifulSoup(page.content, "html.parser")

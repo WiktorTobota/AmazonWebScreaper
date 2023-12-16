@@ -25,8 +25,8 @@ today = datetime.date.today()
 
 #writing a func that will check price of a product and add a record to a csv -> without creating a new one
 def check_price(title, data, date):
-  header = ['Title ', ' Price', 'Date']
-  data = [title, price, date]
+    header = ['Title ', ' Price', 'Date']
+    data = [title, price, date]
     
   with open('AmazonProducts.csv', 'a+', newline='', encoding='UTF8') as f:
     writer = csv.writer(f)
